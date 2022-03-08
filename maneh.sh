@@ -2,7 +2,7 @@
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
 
-apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl -y
+apt update;apt -y install binutils cmake build-essential screen unzip net-tools curl
 
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.gz
 
@@ -23,14 +23,14 @@ sleep .2
 echo " "
 echo " "
 
-echo ""
+echo "**"
 
 ./graftcp/graftcp curl ifconfig.me
 
 echo " "
 echo " "
 
-echo ""
+echo "**"
 
 echo " "
 echo " "
